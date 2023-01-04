@@ -5,22 +5,23 @@ import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:uni_links/uni_links.dart';
 
+import '../../../helpers/model_helpers.dart';
 import '../../../model/news_item.dart';
 import '../../../services/notification.dart';
 import '../../home_detail.dart';
 
 bool _initialUriIsHandled = false;
 
-class NewsItemWidget extends StatefulWidget {
+class NewsItemCard extends StatefulWidget {
   final NewsItem newsItem;
 
-  const NewsItemWidget({super.key, required this.newsItem});
+  const NewsItemCard({super.key, required this.newsItem});
 
   @override
-  State<NewsItemWidget> createState() => _NewsItemWidgetState();
+  State<NewsItemCard> createState() => _NewsItemCardState();
 }
 
-class _NewsItemWidgetState extends State<NewsItemWidget> {
+class _NewsItemCardState extends State<NewsItemCard> {
   StreamSubscription? _streamSubscription;
 
   // stream and listen on the notifications

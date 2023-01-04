@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:push_dawurobo_test/model/news_item.dart';
-import 'component/news_item_widget.dart';
+import 'component/news_item_card.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -13,11 +13,11 @@ class Home extends StatelessWidget {
       ),
       body: ListView.separated(
           shrinkWrap: true,
-          separatorBuilder: ((_, __) => const SizedBox(height: 15)),
+          separatorBuilder: ((_, __) => const SizedBox(height: 10)),
           itemCount: newsItems.length,
           itemBuilder: (_, index) {
             // list of news items
-            return NewsItemWidget(newsItem: newsItems[index]);
+            return NewsItemCard(newsItem: newsItems[index]);
           }),
     );
   }
