@@ -43,6 +43,3 @@ List<NewsItem> newsItems = [
     publishedAt: '4th January, 2022',
   ),
 ];
-
-NewsItem findByTitle(String title) =>
-    newsItems.firstWhere((newsItem) => newsItem.title == title);
