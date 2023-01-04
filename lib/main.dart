@@ -16,12 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // define theme to be used across applications
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.grey[350],
+        scaffoldBackgroundColor: Colors.white,
         appBarTheme: const AppBarTheme(
-          iconTheme: IconThemeData(color: Colors.black),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.teal,
           titleTextStyle: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
