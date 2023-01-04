@@ -108,7 +108,7 @@ class _NewsItemWidgetState extends State<NewsItemWidget> {
       padding: const EdgeInsets.all(16),
       margin: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.teal[300],
         borderRadius: BorderRadius.circular(10),
         boxShadow: const [
           BoxShadow(
